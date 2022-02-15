@@ -14,7 +14,7 @@ echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
 echo '<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">';
 echo '</head>' . "\n";
 echo '<body>' . "\n";
-echo '<p style="font-family: &quot;Luckiest Guy&quot;, cursive;">' . "\n";
+echo '<p style="font-family: &quot;Luckiest Guy&quot;, cursive; font-size:50px;">' . "\n";
 echo $output . "\n";
 echo '</p>' . "\n";
 echo '</body>' . "\n";

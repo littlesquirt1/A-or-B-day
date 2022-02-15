@@ -1,5 +1,8 @@
+python-dateutil
 arrow
+six
 sgmllib3k
 tatsu
 feedparser
 ics
+requests

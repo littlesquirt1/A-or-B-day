@@ -3,6 +3,7 @@ $command = escapeshellcmd('python main.py');
 $output = shell_exec($command);
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,28 +24,20 @@ $output = shell_exec($command);
         transform: translate(-50%, -50%);
         border-radius: 25px;
         background: #ffffff;
+        width: 500px;
       }
       body {
-        background-image: url('FMS.jpg');
+        background-image: url('paper.gif');
         background-repeat: no-repeat;
         background-attachment: fixed;  
         background-size: cover;
-      }
-      #rcorners1 {
-        border-radius: 25px;
-        background: #ffffff;
-        padding: 20px; 
-        width: 200px;
-        height: 150px;  
       }
     </style>
   </head>
 
   <body>
-    <div style="height:50px;">
-    </div>
       <div class="center">
-        <p style="font-family: 'Luckiest Guy', cursive; font-size:50px; background-color:#ffffff">
+        <p style="font-family: 'Luckiest Guy', cursive; font-size:50px; text-align:center;">
           <?php echo $output; ?>
         </p>
     </div>

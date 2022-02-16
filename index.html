@@ -14,12 +14,6 @@ $output = shell_exec($command);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <style>
-      .container {
-        height: 200px;
-        position: relative;
-        border: 3px solid green;
-      }
-      
       .center {
         margin: 0;
         position: absolute;
@@ -28,18 +22,22 @@ $output = shell_exec($command);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
       }
+      body {
+        background-image: url('FMS.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+      }
     </style>
   </head>
 
   <body>
     <div style="height:50px;">
     </div>
-    <div class="container">
       <div class="center">
         <p style="font-family: &quot;Luckiest Guy&quot;, cursive; font-size:50px;">
           <?php echo $output; ?>
         </p>
-      </div>
     </div>
   </body>
 </html>

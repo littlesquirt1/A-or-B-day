@@ -9,11 +9,11 @@ today  = datetime.today().strftime('%Y-%m-%d')
 for event in c.events:
   if str(event.begin.date()) == today:
     if event.name == "A Day":
-      message = "It is an A Day"
+      message = "  It is an A Day  "
     elif event.name == "B Day":
-      message = "It is a B Day"
+      message = "  It is a B Day  "
     else:
-      message = "There is no school today."
+      message = "  There is no school today  "
 
 print (message)
 

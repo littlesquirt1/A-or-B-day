@@ -1,44 +1,46 @@
+
 <?php
 $command = escapeshellcmd('python main.py');
 $output = shell_exec($command);
-
-echo '<!DOCTYPE html>' . "\n";
-echo '<html lang="en">' . "\n";
-echo '<head>' . "\n";
-echo '<meta charset="UTF-8">' . "\n";
-echo '<meta http-equiv="X-UA-Compatible" content="IE=edge">' . "\n";
-echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">' . "\n";
-echo '<title>A or B Day?</title>' . "\n";
-echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
-echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
-echo '<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">';
-echo '<style>';
-echo '.container {';
-echo 'height: 200px;';
-echo 'position: relative;';
-echo 'border: 3px solid green;';
-echo '}';
-echo '';
-echo '.center {';
-echo 'margin: 0;';
-echo 'position: absolute;';
-echo 'top: 50%;';
-echo 'left: 50%;';
-echo '-ms-transform: translate(-50%, -50%);';
-echo 'transform: translate(-50%, -50%);';
-echo '}';
-echo '</style>';
-echo '</head>' . "\n";
-echo '<body>' . "\n";
-echo '<div style="height:50px;">';
-echo '</div>';
-echo '<div class="container">';
-echo '<div class="center">';
-echo '<p style="font-family: &quot;Luckiest Guy&quot;, cursive; font-size:50px;">' . "\n";
-echo $output . "\n";
-echo '</p>' . "\n";
-echo '</div>';
-echo '</div>';
-echo '</body>' . "\n";
-echo '</html>';
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A or B Day?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <style>
+      .container {
+        height: 200px;
+        position: relative;
+        border: 3px solid green;
+      }
+      
+      .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="height:50px;">
+    </div>
+    <div class="container">
+      <div class="center">
+        <p style="font-family: &quot;Luckiest Guy&quot;, cursive; font-size:50px;">
+          <?php echo $output; ?>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

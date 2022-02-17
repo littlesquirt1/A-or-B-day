@@ -13,8 +13,8 @@ for event in c.events:
     eventsnow.append(event)
 
 if "A Day" in str(eventsnow):
-  print ("It is an A Day")
+  print ('It is an "A" Day')
 elif "B Day" in str(eventsnow):
- print ("It is a B Day")
+ print ('It is a "B" Day')
 else:
-  print ("There is no school today")
+  print ('There is no school today')

@@ -1,11 +1,12 @@
 from ics import Calendar
 import requests
 from datetime import datetime
+from pytz import timezone
 import arrow
 
 url = "https://bedfordfms.sharpschool.net/ICalendarHandler?calendarId=1079243"
 c = Calendar(requests.get(url).text)
-today  = datetime.today().strftime('%Y-%m-%d')
+today  = datetime.now(timezone('US/Eastern')).strftime("%Y-%m-%d")
 eventsnow = []
 
 for event in c.events:
